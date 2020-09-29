@@ -17,12 +17,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        showDate();
-        showTime();
+        Calendar calendar = Calendar.getInstance();
+
+        showDate(calendar);
+        showTime(calendar);
     }
 
-    private void showTime() {
-        Calendar calendar = Calendar.getInstance();
+    private void showTime(Calendar calendar) {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("hh:mm:ss");
         setTime(calendar, simpleDateFormat);
     }
@@ -33,8 +34,7 @@ public class MainActivity extends AppCompatActivity {
         lblCurrentTime.setText(currentTime);
     }
 
-    private void showDate() {
-        Calendar calendar = Calendar.getInstance();
+    private void showDate(Calendar calendar) {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy");
         setDate(calendar, simpleDateFormat);
     }
