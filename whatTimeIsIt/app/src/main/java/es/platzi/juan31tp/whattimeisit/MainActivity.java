@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setTime(Calendar calendar, SimpleDateFormat simpleDateFormat) {
-        TextView lblCurrentTime = findViewById(R.id.lblCurrenTime);
+        TextView lblCurrentTime = findViewById(R.id.lblCurrentTime);
         String currentTime = simpleDateFormat.format(calendar.getTime());
         lblCurrentTime.setText(currentTime);
     }

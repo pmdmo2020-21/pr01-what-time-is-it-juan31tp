@@ -7,6 +7,4 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="mainTextSize">50sp</style>
-
 </resources>
