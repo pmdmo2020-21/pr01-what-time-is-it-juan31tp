@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">whatTimeIsIt</string>
+    <string name="date_title">Date</string>
+    <string name="time_title">Time</string>
+</resources>
